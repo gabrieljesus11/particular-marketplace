@@ -45,50 +45,50 @@
 
 
     <!--Header-->
-
+<div class="header">
     <nav class="navbar bg-body-tertiary fixed-top">
       <div class="container-fluid">
-        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menú</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menú</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Dropdown
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <form class="d-flex mt-3" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+            </div>
           </div>
-          <div class="offcanvas-body">
-            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li>
-                    <hr class="dropdown-divider">
-                  </li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li>
-            </ul>
-            <form class="d-flex mt-3" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
-          </div>
-        </div>
       </div>
     </nav>
 
     <header class="container mb-3">
-      <div class="nav flex-wrap justify-content-around">
+      <div class="nav flex-wrap align-self-stretch justify-content-center align-items-start">
       <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">          
 
@@ -119,9 +119,16 @@
         </div>
       </nav>
     </header>
+  </div>
 
     <!--Homesliders-->
-    <div id="carouselExample" class="carousel slide">
+
+    <div id="carouselHomseSliders" class="carousel slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselHomseSliders" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselHomseSliders" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselHomseSliders" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
       <div class="carousel-inner">
         <div class="carousel-item active">
           <img src="imagenes/hs1carousel.png" class="d-block w-100" alt="...">
@@ -133,33 +140,128 @@
           <img src="imagenes/hs3carousel.jpg" class="d-block w-100" alt="...">
         </div>
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselHomseSliders" data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Previous</span>
       </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselHomseSliders" data-bs-slide="next">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
       </button>
     </div>
 
-    <!--Carrusel Categorías-->
+    <br>
+    <br>
 
+    <!--Carrusel Categorías-->
+    <div class="titulo m-5">
+      <h3>Categorías</h3>
+    </div>
+
+    <div class="btn-toolbar flex-wrap align-self-stretch justify-content-center align-items-center align-content-between" role="toolbar" aria-label="Toolbar with button groups">
+      <div class="btn-group-lg  mx-3" role="group" aria-label="First group">
+        <button type="button" class="btn btn-outline-primary">Diseño</button>
+        <button type="button" class="btn btn-outline-secondary">Programación</button>
+        <button type="button" class="btn btn-outline-success">Marketing</button>
+        <button type="button" class="btn btn-outline-danger">Negocios</button>
+        <button type="button" class="btn btn-outline-warning">Big data</button>
+        <button type="button" class="btn btn-outline-info">Idiomas</button>
+      </div>
+    </div>
+    
+    <br>
+    <br>
 
 
     <!--Carrusel Cursos destacados-->
+    <div class="titulo m-5">
+      <h3>Cursos destacados</h3>
+    </div>
+    
 
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="card" style="width: 18rem;">
+            <img src="imagenes/cursoIdiomas.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Curso de idiomas</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card" style="width: 18rem;">
+            <img src="imagenes/cursoDiseno.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Curso de Diseño</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card" style="width: 18rem;">
+            <img src="imagenes/cursoMkt.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Curso de Marketing</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card" style="width: 18rem;">
+            <img src="imagenes/cursoProgramacion.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Curso de Programación</p>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+
+<br>
+<br>
 
     <!--Carrusel Banner publicitario-->
 
+    <div class="container-fluid">
+      <div class="row flex-column text-center">
+        <div class="col">
+          <div class="banner">
+            <img src="imagenes/banner.png" class="img-fluid">
+          </div>
+        </div>
+      </div>
+    </div>
 
 
     <!--Reviews-->
 
 
+    <br>
+    <br>
 
     <!--Newsletter-->
-    
+    <div class="titulo m-5">
+      <h3>Newsletter</h3>
+    </div>
+
+    <form class="row g-3 mx-5">
+  <div class="col-md-6">
+    <label for="inputEmail4" class="form-label">Mail</label>
+    <input type="email" class="form-control" id="inputEmail4">
+  </div>
+  <div class="col-md-6">
+    <label for="inputPassword4" class="form-label">Contraseña</label>
+    <input type="password" class="form-control" id="inputPassword4">
+  </div>
+  
+  <div class="col-12">
+    <button type="submit" class="btn btn-info">Enviar</button>
+  </div>
+</form>
 
 
     <!--Footer-->
